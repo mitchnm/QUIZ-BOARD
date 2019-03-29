@@ -8,128 +8,132 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
-      <div class="container">
+    <div class="container">
+    <form name="quiz" onsubmit="return onSubmit()">  
     <div style="text-align: center"><h1><strong>QUIZ</strong></h1></div>
     <p>1.What is JavaScript?</p>
     <div class="radio">
       <label>
-        <input type="radio" name="answer 1" value="football" checked>
+        <input type="radio" name="answer1" value="football" checked>
           It is a football club.
       </label>    
     </div>  
     <div class="radio">
       <label>
-        <input type="radio" name="answer 1" value="building"> 
+        <input type="radio" name="answer1" value="building"> 
           It is a building in town.
       </label>    
     </div>    
     <div class="radio">
       <label>
-        <input type="radio" name="answer 1" value="language">
+        <input type="radio" name="answer1" value="language">
           It is a programming language.
       </label>
     </div> 
     <div class="radio">   
       <label>
-        <input type="radio" name="answer 1" value="country">
+        <input type="radio" name="answer1" value="country">
           It is country in Europe.
       </label>
     </div>
     <p>2.Which of the following is not a JavaScript data type?</p>
     <div class="radio">
       <label>
-        <input type="radio" name="answer 2" value="Number" checked>
+        <input type="radio" name="answer2" value="Number" checked>
         Number.
       </label>
     </div>
     <div class="radio">
       <label>
-        <input type="radio" name="answer 2" value="String">
+        <input type="radio" name="answer2" value="String">
         String.
       </label>
     </div>  
     <div class="radio">
       <label>
-        <input type="radio" name="answer 2" value="Label">
+        <input type="radio" name="answer2" value="Label">
         Label.
       </label> 
     </div>  
     <div class="radio">
       <label>
-        <input type="radio" name="answer 2" value="Boolean">
+        <input type="radio" name="answer2" value="Boolean">
         Boolean.
       </label> 
     </div>
     <p>3.What will the following code return: Boolean(26 > 48)</p>
     <div class="radio">
       <label>
-        <input type="radio" name="answer 3" value="True" checked>
+        <input type="radio" name="answer3" value="True" checked>
         True.
       </label>
     </div>
     <div class="radio">
       <label>
-        <input type="radio" name="answer 3" value="False">
+        <input type="radio" name="answer3" value="False">
         False.
       </label>
     </div>  
     <div class="radio">
       <label>
-        <input type="radio" name="answer 3" value="NaN">
+        <input type="radio" name="answer3" value="NaN">
         NaN.
       </label> 
     </div> 
     <p>4.Which sign is used to mean "either of them may be true"?</p> 
     <div class="radio">
       <label>
-        <input type="radio" name="answer 4" value="===" checked>
+        <input type="radio" name="answer4" value="===" checked>
         ===
       </label>
     </div>
     <div class="radio">
       <label>
-        <input type="radio" name="answer 4" value="&&">
+        <input type="radio" name="answer4" value="ans1">
         &&
       </label>
     </div>  
     <div class="radio">
       <label>
-        <input type="radio" name="answer 4" value="@@">
+        <input type="radio" name="answer4" value="ans2">
         @@
       </label> 
     </div>  
     <div class="radio">
       <label>
-        <input type="radio" name="answer 4" value="||">
+        <input type="radio" name="answer4" value="ans3">
         | |
       </label> 
     </div>
     <p>5.Which of these functions parses a string and return an integer?</p>
       <div class="radio">
         <label>
-          <input type="radio" name="answer 5" value="parseFloat()" checked>
+          <input type="radio" name="answer5" value="parseFloat()" checked>
           parseFloat()
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="answer 5" value="alert()">
+          <input type="radio" name="answer5" value="alert()">
           alert()
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="answer 5" value="prompt()">
+          <input type="radio" name="answer5" value="prompt()">
           prompt()
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="answer 5" value="parseInt">
-            parseInt
+          <input type="radio" name="answer5" value="parseInt">
+            parseInt()
         </label>
       </div>
-      <div style="text-align: center"><input type ="button" value = "SUBMIT" onclick="quizBoard()"></div> 
+      <div style="text-align: center"><button type ="submit">SUBMIT </button> </div></br></br>
+      <div style="text-align: center"><a href="index.html"><input type ="button" value="Retake the quiz"></div>
     </div>
+  </form>
+    <h2><strong>Your score:Not attempted</strong></h2>
   </body>
 </html>
