@@ -1,85 +1,91 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>QUIZ</title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/quiz.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
-  </head>
-  <body>
-    <div class="container">
-    <form name="quiz" onsubmit="return onSubmit()">  
-    <div style="text-align: center"><h1><strong>QUIZ</strong></h1></div>
-    <p>1.What is JavaScript?</p>
-    <div class="radio">
-      <label>
-      <input type="radio" name="answer1" value="football">
-      It is a football club.</br>
-      <input type="radio" name="answer1" value="building">
-        It is a building in town.</br>
-      <input type="radio" name="answer1" value="language">
-        It is a programming language.</br>
-      <input type="radio" name="answer1" value="country">
-        It is country in Europe.</br>
-      </label>  
-    </div>
-    <p>2.Which of the following is not a JavaScript data type?</p>
-    <div class="radio">
-      <label>
-        <input type="radio" name="answer2" value="Number">
-        Number.</br>
-        <input type="radio" name="answer2" value="String">
-        String.</br>
-        <input type="radio" name="answer2" value="Label">
-        Label.</br>
-        <input type="radio" name="answer2" value="Boolean">
-        Boolean.</br>
-      </label> 
-    </div>
-    <p>3.What will the following code return: Boolean(26 > 48)</p>
-    <div class="radio">
-      <label>
-        <input type="radio" name="answer3" value="true">
-        True.</br>
-        <input type="radio" name="answer3" value="false">
-        False.</br>
-        <input type="radio" name="answer3" value="NaN">
-        NaN.</br>
-      </label> 
-    </div> 
-    <p>4.Which sign is used to mean "either of them may be true"?</p> 
-    <div class="radio">
-      <label>
-        <input type="radio" name="answer4" value="ans1">
-        ===</br>
-        <input type="radio" name="answer4" value="ans2">
-        &&</br>
-        <input type="radio" name="answer4" value="ans3">
-        @@</br>
-        <input type="radio" name="answer4" value="ans4">
-        | |</br>
-      </label> 
-    </div>
-    <p>5.Which of these functions parses a string and return an integer?</p>
+
+<head>
+  <meta charset="utf-8">
+  <title>QUIZ</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/quiz.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+    <form id="quiz" name="quiz">
+      <div style="text-align: center">
+        <h1><strong>QUIZ</strong></h1>
+      </div>
+      <p>1.What is JavaScript?</p>
       <div class="radio">
         <label>
-          <input type="radio" name="answer5" value="parseFloat">
+          <input type="radio" name="answer1" value="00">
+          It is a football club.</br>
+          <input type="radio" name="answer1" value="00">
+          It is a building in town.</br>
+          <input type="radio" name="answer1" value="10">
+          It is a programming language.</br>
+          <input type="radio" name="answer1" value="00">
+          It is country in Europe.</br>
+        </label>
+      </div>
+      <p>2.Which of the following is not a JavaScript data type?</p>
+      <div class="radio">
+        <label>
+          <input type="radio" name="answer2" value="10">
+          Label.</br>
+          <input type="radio" name="answer2" value="00">
+          Number.</br>
+          <input type="radio" name="answer2" value="00">
+          String.</br>
+          <input type="radio" name="answer2" value="00">
+          Boolean.</br>
+        </label>
+      </div>
+      <p>3.What will the following code return: Boolean(26 > 48)</p>
+      <div class="radio">
+        <label>
+          <input type="radio" name="answer3" value="00">
+          True.</br>
+          <input type="radio" name="answer3" value="10">
+          False.</br>
+          <input type="radio" name="answer3" value="00">
+          NaN.</br>
+        </label>
+      </div>
+      <p>4.Which sign is used to mean "either of them may be true"?</p>
+      <div class="radio">
+        <label>
+          <input type="radio" name="answer4" value="00">
+          ===</br>
+          <input type="radio" name="answer4" value="10">
+          &&</br>
+          <input type="radio" name="answer4" value="00">
+          @@</br>
+          <input type="radio" name="answer4" value="00">
+          | |</br>
+        </label>
+      </div>
+      <p>5.Which of these functions parses a string and return an integer?</p>
+      <div class="radio">
+        <label>
+          <input type="radio" name="answer5" value="00">
           parseFloat()</br>
-          <input type="radio" name="answer5" value="alert">
+          <input type="radio" name="answer5" value="00">
           alert()</br>
-          <input type="radio" name="answer5" value="prompt">
+          <input type="radio" name="answer5" value="00">
           prompt()</br>
-          <input type="radio" name="answer5" value="parseInt">
+          <input type="radio" name="answer5" value="10">
           parseInt()</br>
         </label>
       </div>
-      <div style="text-align: center"><button type ="submit">SUBMIT </button> </div></br></br>
+      <div style="text-align: center"><button type="submit">SUBMIT </button> </div></br>
       <div id="results">
-        <h2>YOUR SCORE:NOT YET ATTEMPTED.</h2>
+        <h2 id="results" style="text-align: center;">YOUR SCORE:NOT YET ATTEMPTED.</h2></br>
       </div>
-      <div style="text-align: center"><a href="index.html"><input type ="button" value="Retake the quiz"></div>
-    </div>
-  </form>
-  </body>
+      <div style="text-align: center"><a href="index.html"><input type="button" value="Retake the quiz"></div>
+    </form>
+  </div>
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
 </html>
