@@ -1,4 +1,4 @@
-function add(question1,question2,question3,question4,question5){
+function add(question1, question2, question3, question4, question5) {
   return question1 + question2 + question3 + question4 + question5;
 };
 
@@ -10,9 +10,10 @@ $(document).ready(function () {
     var question3 = parseInt($('input:radio[name=answer3]:checked').val());
     var question4 = parseInt($('input:radio[name=answer4]:checked').val());
     var question5 = parseInt($('input:radio[name=answer5]:checked').val());
-    var result = add(question1, question2, question3, question4, question5);
+    var result = add(question1, question2, question3, question4, question5)
 
-    $("#results").text(result);
+
+    $(".dip").text("YOUR SCORE: " + result + " POINTS OUT OF 50");
 
   });
 });
