@@ -19,6 +19,10 @@ if there are any issues,contact me through my email: "mitchndungu21@gmail.com"
 
 ## Behavior Driven Development ##
 
+ + After pressing the button to start the quiz, the user is redirected to the form with questions.
+ + After filing in the answers and submitting, the apllication will evaluate correct answers.
+ + The application then outputs the results of the user with comment based on how they performed.
+
 | Behavior                 | Input                    | Output                          |
 |--------------------------|:------------------------:|--------------------------------:|
 | The program evaluates    | 80% of questions correct |  EXCELLENT WORK! KEEP IT UP.    |
@@ -28,9 +32,7 @@ if there are any issues,contact me through my email: "mitchndungu21@gmail.com"
 | score                    |                          |                                 |
 
 
- + After pressing the button to start the quiz, the user is redirected to the form with questions.
- + After filing in the answers and submitting, the apllication will evaluate correct answers.
- + The application then outputs the results of the user with comment based on how they performed.
+
 
 
 ### License
