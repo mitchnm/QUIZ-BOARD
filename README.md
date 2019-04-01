@@ -17,20 +17,6 @@ This project uses HTMl , CSS and also bootstrap for styling.The back-end code us
 ## Support and contact details
 if there are any issues,contact me through my email: "mitchndungu21@gmail.com"
 
-## Behavior Driven Development ##
-
-| Behavior                 | Input                    | Output                          |
-|--------------------------|:------------------------:|--------------------------------:|
-| The program evaluates    | 80% of questions correct |  EXCELLENT WORK! KEEP IT UP.    |
-| the number of correct    | 50% of questions correct |  FAIRLY DONE! GOOD WORK.        |
-| answers inputed by the   | Below 50% correct        |  POOR WORK! RETAKE THE TEST.    |
-| user and gives the total |                          |                                 |
-| score                    |                          |                                 |
-
-
- + After pressing the button to start the quiz, the user is redirected to the form with questions.
- + After filing in the answers and submitting, the apllication will evaluate correct answers.
- + The application then outputs the results of the user with comment based on how they performed.
 
 
 ### License
