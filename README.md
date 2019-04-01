@@ -11,7 +11,7 @@ This quiz-board tests the students general understanding of JavaScript by asking
 * After cloning the repository the quiz-board will install automatically.
 
 ## Known Bugs
-ther are no known bugs.
+There are no known bugs.
 ## Technologies Used
 This project uses HTMl , CSS and also bootstrap for styling.The back-end code used in this project is JavaScript and jQuery.
 ## Support and contact details
