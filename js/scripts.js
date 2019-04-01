@@ -3,6 +3,7 @@ function add(question1, question2, question3, question4, question5) {
 };
 
 
+
 $(document).ready(function () {
   $("#quiz").submit(function (event) {
     event.preventDefault();
@@ -13,22 +14,16 @@ $(document).ready(function () {
     var question5 = parseInt($('input:radio[name=answer5]:checked').val());
     var result = add(question1, question2, question3, question4, question5);
 
-
     $(".dip").text("YOUR SCORE: " + result + " POINTS OUT OF 50");
-    
-    
+
     if (result >= 40) {
       $("#comment").text("EXCELLENT WORK! KEEP IT UP.")
-    }
-    else if (result >= 25 && result < 40)  {
+    } else if (result >= 25 && result < 40) {
       $("#comment").text("FAIRLY DONE! GOOD WORK.")
-    }
-    else if (result < 25) {
+    } else if (result < 25) {
       $("#comment").text("POOR WORK! RETAKE THE TEST.")
-    }
-    else {
+    } else {
       $("#comment").text("ANSWER EVERY QUESTION PLEASE!")
     }
   });
 });
-
